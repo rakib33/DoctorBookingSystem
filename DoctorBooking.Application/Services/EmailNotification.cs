@@ -1,0 +1,20 @@
+﻿using DoctorBooking.Application.Interfaces;
+using DoctorBooking.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DoctorBooking.Application.Services
+{
+    public class EmailNotification : INotification
+    {
+        public Task<bool> Send(Appointment apt)
+        {
+            //send mail
+            //configure mail server, etc.
+            return Task.FromResult(true);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DTOs\DoctorDto.cs~RFb02775.TMP" />
+    <None Remove="DTOs\PatientDto.cs~RFb1b902.TMP" />
+    <None Remove="Interfaces\IBookingService.cs~RF16391ebb.TMP" />
+    <None Remove="Interfaces\INotification.cs~RF189c6a.TMP" />
+    <None Remove="Interfaces\ISlotService.cs~RFed1b66.TMP" />
+    <None Remove="Mappings\MappingProfile.cs~RFb29316.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DoctorBooking.Infrastructure\DoctorBooking.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
